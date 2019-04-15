@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    font-size: 14px;
+}
+
+p {
+    font-size: 20px;
+}
+
+a {
+    color: #e2574c;
+}
+
+h1, h2 {
+    font-family: "railway", sans-serif;
+    color: white;
+}
+
+li {
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    padding: 0;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 100px;
+    height: 300px; */
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.fab-ul li {
+
+}
+
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+}
+
+.cart-container {
+    display: flex;
+    min-width: 0;
+    /* margin: 0; */
+    /* display:inline-block; */
+    justify-content: flex-end;
+    /* text-align: right; */
+    /* padding-bottom: 24px; */
+    order: 2;
+    width: 50%; 
+    background-color: lightblue;
+}
+
+
+.nav-container {
+    border-top: 1px solid black;
+    /* margin: 10px; */
+    order: 3;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-container li a {
+    text-decoration: none;
+}
+
+.brand-container {
+    /* margin: 0 auto; */
+    display: flex;
+    flex-direction: row;
+
+    /* align-content: center; */
+    /* justify-content: center; */
+    /* padding-bottom: 24px; */
+    /* height: 100px; */
+    padding: 15px;
+    order: 1;
+    width: 50%; 
+}
+
+.brand-container img {
+    /* display: block; */
+    width: 150px;
+    height: 50px;
+
+}
+
+.cart-container img {
+    /* display: block; */
+    padding: 15px;
+    width: 90px;
+    height: 90px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .cart-img {
+    margin: auto;
+    width: 100px;
+    display: block;
+} */
+
+/* .brand-img {
+    margin: auto;
+    /* width: 240px; */
+    /* height: 100px;
+    display: block; */
+
+
+.nav-bar li {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.collection-container{
+    text-align: center;
+}
+
+.banner-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,.3),rgba(0, 0, 0, 0.3)), 
+    url(../images/banner-girl.png), 
+    url(../images/flower-bkgd.jpg);
+    background-repeat: no-repeat;
+    background-position: center, center 100px, center;
+    background-size: contain, contain, cover;
+    height:700px;
+}
+
+
+.smalltext {
+    font-size: 8px;
+}
+
+
+footer {
+    background: #242424;
+
+}
+
+/* .footer-container {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+} */
+
+/* .aloha-img .cart-img {
+    max-height: 100px;
+} */
+
+/* Banner */
+
+
+
+
+
+
+@media screen and (min-width: 600px){
+    /* only applies at 600px or greater */
+    
+.header-container {
+        box-sizing: border-box; 
+        flex-flow: row wrap;
+        align-content: center;
+        justify-content: center;
+    } 
+
+.footer-container {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    
+
+.nav-list {
+        border-top: none;
+        width: 50%;
+        order: 2;
+        display: inline;
+        justify-content: center;
+        text-align: center;
+        border: 1px solid black;
+        align-content: center;
+        text-align: center;
+    } 
+
+.brand-container{
+        width: 25%;
+        order: 1;
+    }
+
+.shopping-container{
+        width: 25%;
+        order: 3;
+        text-align: right;
+    }
+
+}
+
+@media screen and (min-width: 1240px){
+     nav {
+        width: 100%;
+    } 
+} 
