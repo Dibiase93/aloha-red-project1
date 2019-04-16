@@ -4,6 +4,7 @@
 
 body, html {
     font-size: 14px;
+    height: auto;
 }
 
 p {
@@ -32,6 +33,12 @@ ul {
     padding: 0;
 }
 
+.container-100 {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
 .footer-container {
     width: 100%;
     display: flex;
@@ -43,15 +50,18 @@ ul {
     color: white;
 }
 
-.fab-ul li {
+/* .fab-ul li {
 
-}
+} */
 
+/* Max Width Container */
 
 .container {
     max-width: 1240px;
     margin: 0 auto;
 }
+
+/* Brand Bag and Nav container */
 
 .header-container {
     display: flex;
@@ -64,15 +74,10 @@ ul {
 
 .cart-container {
     display: flex;
-    min-width: 0;
-    /* margin: 0; */
-    /* display:inline-block; */
     justify-content: flex-end;
-    /* text-align: right; */
-    /* padding-bottom: 24px; */
+    height: auto;
     order: 2;
     width: 50%; 
-    background-color: lightblue;
 }
 
 
@@ -89,15 +94,8 @@ ul {
 }
 
 .brand-container {
-    /* margin: 0 auto; */
     display: flex;
-    flex-direction: row;
-
-    /* align-content: center; */
-    /* justify-content: center; */
-    /* padding-bottom: 24px; */
-    /* height: 100px; */
-    padding: 15px;
+    height: auto;
     order: 1;
     width: 50%; 
 }
@@ -113,7 +111,7 @@ ul {
     /* display: block; */
     padding: 15px;
     width: 90px;
-    height: 90px;
+    height: auto;
 }
 
 .nav-bar {
@@ -121,24 +119,13 @@ ul {
     justify-content: space-around;
 }
 
-/* .cart-img {
-    margin: auto;
-    width: 100px;
-    display: block;
-} */
-
-/* .brand-img {
-    margin: auto;
-    /* width: 240px; */
-    /* height: 100px;
-    display: block; */
-
 
 .nav-bar li {
     display: inline-block;
     margin: 0 auto;
 }
 
+/* Banner */
 .collection-container{
     text-align: center;
 }
@@ -154,19 +141,158 @@ ul {
     background-repeat: no-repeat;
     background-position: center, center 100px, center;
     background-size: contain, contain, cover;
-    height:700px;
 }
 
+/* Style's containers */
+
+.styles-container {
+    display: flex;
+    direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.mens {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/mens-category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50%;
+    order: 1;
+}
+
+.mens a {
+    align-self: center;
+}
+
+.trends {
+    /* height: 100px; */
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-image: url(../images/trends-category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 50%;
+    order: 2;
+}
+
+.trends a {
+    align-self: center;
+}
+
+.glasses {
+    height: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-image: url(../images/glasses-category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 50%;
+    order: 3;
+}
+
+.glasses a {
+    align-self: center;
+}
+
+.sale {
+    height: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-image: url(../images/sale-category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 50%;
+    order: 4;
+}
+
+.sale a {
+    align-self: center;
+}
+
+.bags {
+    height: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-image: url(../images/bags-category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 50%;
+    order: 5;
+}
+
+.bags a {
+    align-self: center;
+}
+
+.womens {
+    display: flex;
+    justify-content: center;
+    /* align-self: center; */
+    background-image: url(../images/womens-category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50%;
+    order: 6;
+}
+
+.womens a {
+    align-self: center;
+}
+
+/* .styles-bottom-container {
+    display: flex;
+    direction: row;
+} */
+
+
+
+ /* Footer */
 
 .smalltext {
     font-size: 8px;
 }
 
+.icons {
+    display: none;
+}
+
+.fab-horizontal {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* height: auto; */
+}
+.socialmedia {
+    max-width: 33%;
+    margin: 0 auto;
+    min-width: 100px;
+}
 
 footer {
     background: #242424;
-
 }
+
+
 
 /* .footer-container {
     color: white;
@@ -218,6 +344,7 @@ footer {
         align-content: center;
         text-align: center;
     } 
+
 
 .brand-container{
         width: 25%;
