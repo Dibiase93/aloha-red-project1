@@ -8,14 +8,14 @@ body, html {
     font-size: 14px;
     height: auto;
 }
-
+/* 
 p {
     font-size: 20px;
-}
+} */
 
 a {
     color: #e2574c;
-    font-family: "railway";
+    font-family: "railway-light", sans-serif;
     text-transform: uppercase;
 }
 
@@ -74,14 +74,17 @@ footer {
 
 .nav-container {
     border-top: 1px solid black;
-    /* margin: 10px; */
     order: 3;
     width: 100%;
     text-align: center;
+    padding:20px;
 }
 
 .nav-container li a {
     text-decoration: none;
+    padding: 10px;
+    /* margin:10px; */
+
 }
 
 .brand-container {
@@ -106,13 +109,12 @@ footer {
 }
 
 .nav-bar {
-    display: flex;
-    justify-content: space-around;
+    display: inline-block;
 }
 
 
 .nav-bar li {
-    display: inline-block;
+    display: inline;
     margin: 0 auto;
 }
 
@@ -385,11 +387,24 @@ input[type=submit] {
 
 
 .nav-container {
+    position: flex;
+    flex-direction: row;
     border-top: none;
-    /* margin: 10px; */
-    order: 2;
     width: 50%;
+    padding: 0;
 }
+.nav-container li a {
+    padding: 7px;
+    margin: 0;
+    
+}
+
+.nav-list {
+    border-top: none;
+    order: 2;
+} 
+/* .nav-bar {
+} */
 
 .brand-container {
     display: flex;
@@ -421,18 +436,11 @@ input[type=submit] {
         flex-direction: column;
         width: 50%;
     } */
+/* 
+    body, html {
+        font-size: 1.15rem;
+    } */
     
-    .nav-list {
-        border-top: none;
-        /* width: 50%; */
-        order: 2;
-        display: inline;
-        justify-content: center;
-        text-align: center;
-        border: 1px solid black;
-        align-content: center;
-        text-align: center;
-    } 
     
     
     
