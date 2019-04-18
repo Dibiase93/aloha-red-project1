@@ -24,6 +24,19 @@ h1, h2 {
     color: white;
 }
 
+h5 {
+    font-family: "Playfair Display", serif;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 2rem;
+    color: white;
+}
+
+.h5bold {
+    font-style: normal;
+    font-weight: bold;
+}
+
 li {
     margin: 0 auto;
     list-style-type: none;
@@ -232,14 +245,14 @@ footer {
 
     background-image: url(../images/wave-bkgd.jpg);
     background-repeat: no-repeat;
-    background-size: bottom;
     background-position: bottom;
-    height: 200px;
+    height: 350px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-bottom: 8px;
 }
 
 h5 {
@@ -260,7 +273,7 @@ form {
     flex-flow: flex;
     align-content: flex-end;
     justify-content: center;
-    -webkit-border-radius: 25px;
+    border-radius: 25px;
     overflow: hidden;
     
 }
@@ -278,12 +291,14 @@ input[type=submit] {
     width: 25%;
     align-self: flex-end;
     position: relative;
-    -webkit-border-radius: 25px;
+    border-radius: 25px;
     overflow: hidden;
 }
 
 input[type=submit] {
     background-color: #e2574c;
+    font-family: "railway-light", sans-serif;
+    color: white;
 }
 
 /* footer */
@@ -403,8 +418,6 @@ input[type=submit] {
     border-top: none;
     order: 2;
 } 
-/* .nav-bar {
-} */
 
 .brand-container {
     display: flex;
