@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body, html {
     font-size: 14px;
     height: auto;
@@ -44,6 +48,12 @@ li {
 
 img {
     max-width: 100%;
+}
+
+.carousel-cell {
+    text-align: center;
+    width: 100%;
+    margin-right: 10px;
 }
 
 ul {
@@ -288,7 +298,7 @@ input[type=email] {
 }
 
 input[type=submit] {
-    width: 25%;
+    width: 30%;
     align-self: flex-end;
     position: relative;
     border-radius: 25px;
@@ -325,9 +335,9 @@ input[type=submit] {
     
     .socialmedia-container {
         display: flex;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         width: 100%;
-        flex-direction: column;
+        flex-direction: row;
         /* align-content: center; */
         justify-content: space-evenly;
     }
@@ -356,22 +366,32 @@ input[type=submit] {
     
     .socialmedia-container ul {
         align-content: center;
-        width: 100%;
+        width: 50%;
+    }
+
+    .socialmedia {
+        display: flex;
+        display: row;
+        border: 30px solid  #242424;
+    }
+
+    .socialmedia li {
+        margin: 0 auto;
     }
     
     
     
     
-    
+/*     
     .fab-horizontal li {
         display: inline-block;
         width: auto;
       
-    }
+    } */
     
-    .socialmedia li {
+    /* .socialmedia li {
         border: 5px solid  #242424;
-    }
+    } */
 
 
 
@@ -380,6 +400,10 @@ input[type=submit] {
 
 @media screen and (min-width: 600px){
     /* only applies at 600px or greater */
+
+.carousel-cell {
+        width: 50%;
+    }
 
 .category {
         width: 25%;
@@ -499,11 +523,22 @@ input[type=submit] {
     list-style: none;
 }
 
+.socialmedia {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    text-align: left;
+}
+
 
 
 
 @media screen and (min-width: 1240px)
 {
+    .carousel-cell {
+        width: 25%;
+    }
+
      nav {
         width: 100%;
     } 
