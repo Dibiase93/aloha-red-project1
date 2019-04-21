@@ -1,19 +1,25 @@
-document.addEventListener("DOMContentLoaded", function() { 
+document.addEventListener("DOMContentLoaded", function () {
 
-    var flkty = new Flickity( '.main-carousel', {
-        cellAlign: 'center',
-        // container: true,
+    const flkty = new Flickity('.main-carousel', {
+        cellAlign: 'left',
         freeScroll: true,
-        // contain: true,
         fullscreen: true,
-
-      });
-    // const subscribeFrom.addEventListener()
-    //all of code inside
-
-    //  if ( check input value != ''){
+        groupCells: true,
+    });
 
 
-    // }
+    const subscribeForm = document.getElementById("subcribe-form");
 
+    subscribeForm.addEventListener('submit', function (event) {
+        const email = document.getElementById('email');
+        event.preventDefault ();
+
+        if (email.value != '') {
+            alert ("Thank you for subscribing");
+        } else {
+            alert ("Please enter email");
+        }
+
+    });
+  
 });
