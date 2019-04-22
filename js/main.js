@@ -12,14 +12,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     subscribeForm.addEventListener('submit', function (event) {
         const email = document.getElementById('email');
-        event.preventDefault ();
+        event.preventDefault();
 
         if (email.value != '') {
-            alert ("Thank you for subscribing");
+            alert("Thank you for subscribing");
         } else {
-            alert ("Please enter email");
+            alert("Please enter email");
         }
 
     });
-  
+
 });

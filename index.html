@@ -23,10 +23,10 @@
       </div>
       <nav class="nav-container">
         <ul class="nav-bar">
-          <li class="navmenu"><a href="#">About</a></li>
-          <li class="navmenu"><a href="#">Shop</a></li>
-          <li class="navmenu"><a href="#">Featured</a></li>
-          <li class="navmenu"><a href="#">Updates</a></li>
+          <li class="navmenu"><a href="#about">About</a></li>
+          <li class="navmenu"><a href="#shop">Shop</a></li>
+          <li class="navmenu"><a href="#featured">Featured</a></li>
+          <li class="navmenu"><a href="#updates">Updates</a></li>
         </ul>
       </nav>
       <div class="cart-container">
@@ -37,21 +37,21 @@
   <section class="banner-container">
     <div class="collection-container">
       <h1>New Collection</h1>
-      <h2>Spring/Summer</h2>
-      <h2>2019</h2>
+      <h2>Spring/Summer <br class="collection-br"> 2019</h2>
+      <!-- <h2>2019</h2> -->
     </div>
   </section>
 
   <!-- Background image on CSS -->
   <section>
-    <div class="hand-crafted-container">
+    <div class="hand-crafted-container" id="about">
       <h3> Hand-Crafted<span class="styles"> Styles</span></h3>
       <p class="hand-crafted-p">Aloha Apparel Co. sells only the finest ready-to-travel clothing.
         Browse our current selection of products or sign-up for updates below.</p>
     </div>
   </section>
   <!-- Flex box -->
-  <section>
+  <section id="shop">
     <!-- with each picture -->
     <div class="styles-container">
       <div class="mens category">
@@ -74,7 +74,7 @@
       </div>
     </div>
   </section>
-  <section class="container">
+  <section class="container" id="featured">
     <!-- Table for Most-Loved Products -->
     <div class="most-loved-container">
       <h3>Most-Loved <span class="styles">Products</span></h3>
@@ -82,55 +82,63 @@
     <div class="main-carousel">
       <div class="carousel-cell">
         <img src="images/blue-hipster-backpack.jpg" alt="">
-        <h4>Blue Hipster Backpack</h4>
-        <p>Price</p>
+        <p>BAGS</p>
+        <h4>Blue Hipster <br> Backpack</h4>
+        <p>$69.00</p>
         <input class="add-button" type="button" value="Add to Cart">
       </div>
       <div class="carousel-cell">
         <img src="images/blue-silk-dress.jpg" alt="">
-        <h4>Blue Silk Dress</h4>
-        <p>Price</p>
+        <p>DRESSES</p>
+        <h4>Blue Silk <br>Dress</h4>
+        <p>$109.00</p>
         <input class="add-button" type="button" value="Add to Cart">
       </div>
       <div class="carousel-cell">
         <img src="images/checked-stretch-dress.jpg" alt="">
-        <h4>Checked Stretch Dress</h4>
-        <p>Price</p>
+        <p>DRESSES</p>
+        <h4>Checked Stretch<br> Dress</h4>
+        <p>$89.00</p>
         <input class="add-button" type="button" value="Add to Cart">
       </div>
       <div class="carousel-cell">
-        <img src="images/cotton-blue-shirt.jpg" alt="">
-        <h4>Cotton Blue Shirt</h4>
-        <p>Price</p>
+        <img src="images/cotton-blue-shirt.jpg" alt="blue shirt">
+        <p>SHIRTS</p>
+        <h4>Cotton Blue <br> Shirt</h4>
+        <p>$35.00</p>
         <input class="add-button" type="button" value="Add to Cart">
       </div>
       <div class="carousel-cell">
-        <img src="images/cotton-yellow-tshirt.jpg" alt="">
-        <h4>Cotton Yellow T-shirt</h4>
-        <p>Price</p>
+        <img src="images/cotton-yellow-tshirt.jpg" alt="yellow shirt">
+        <p>SHIRTS</p>
+        <h4>Cotton Yellow <br> T-shirt</h4>
+        <p>$35.00</p>
         <input class="add-button" type="button" value="Add to Cart">
       </div>
       <div class="carousel-cell">
-        <img src="images/demin-overall-shorts.jpg" alt="">
-        <h4>Denim Overall Shorts</h4>
-        <p>Price</p>
+        <img src="images/demin-overall-shorts.jpg" alt="denim shorts">
+        <p>SHORTS</p>
+        <h4>Denim Overall <br> Shorts</h4>
+        <p>$44.00</p>
         <input class="add-button" type="button" value="Add to Cart">
       </div>
       <div class="carousel-cell">
-        <img src="images/pink-dotted-dress.jpg" alt="">
-        <h4>Pink Dotted Dress</h4>
-        <p>Price</p>
+        <img src="images/pink-dotted-dress.jpg" alt="dotted dress">
+        <p>DRESSES</p>
+        <h4>Pink Dotted <br> Dress</h4>
+        <p>$89.00</p>
         <input class="add-button" type="button" value="Add to Cart">
       </div>
       <div class="carousel-cell">
-        <img src="images/stretch-knit-dress.jpg" alt="">
-        <h4>Stretch Knit Dress</h4>
-        <p>Price</p>
+        <img src="images/stretch-knit-dress.jpg" alt="Knit Dress">
+        <p>DRESSES</p>
+        <h4>Stretch Knit <br>Dress</h4>
+        <p>$92.00</p>
         <input class="add-button" type="button" value="Add to Cart">
       </div>
     </div>
   </section>
-  <section class="container subscribe-container">
+  <section class="container subscribe-container" id="updates">
     <!-- Sign up for updates - form element with input and button -->
     <h3>Sign-Up for <span class="styles">Updates</span></h3>
     <p>Stay updated on our latest product releases,
