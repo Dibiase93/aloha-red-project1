@@ -15,9 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault();
 
         if (email.value != '') {
-            alert("Thank you for subscribing");
+            alert("Thanks for subscribing!");
         } else {
-            alert("Please enter email");
+            alert("Please enter a valid email");
         }
 
     });
