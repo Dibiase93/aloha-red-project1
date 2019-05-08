@@ -47,6 +47,36 @@ footer {
 
 /* Max Width Container */
 
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.screen-reader-text:focus {
+    clip: auto !important;
+    display: block;
+    height: 40px;
+    left: 5px;
+    top: 5px;
+    width: 100px;
+    z-index: 10;
+    background: white;
+    color: red;
+    align-self: center;
+    /* above all content */
+}
+
+#main[tabindex="-1"]:focus {
+    outline: 0;
+}
+
+:focus {
+    outline: thick dotted;
+}
+
 .container {
     max-width: 1240px;
     margin: 0 auto;
@@ -639,7 +669,7 @@ input[type=submit] {
     .carousel-cell {
         width: 50%;
     }
-   h4 br {
+    h4 br {
         display: initial;
     }
     /*  Tablet Categories */
@@ -706,7 +736,6 @@ input[type=submit] {
     .collection-br {
         display: none;
     }
-
     .subscribe-container p {
         width: 70%;
     }
@@ -721,7 +750,6 @@ input[type=submit] {
         -ms-flex-line-pack: initial;
         align-content: initial;
     }
-
     .hand-crafted-p {
         width: 80%;
     }
@@ -758,12 +786,9 @@ input[type=submit] {
         display: inline-block;
         padding: 5px;
     }
-
     i {
         margin-right: 1 rem;
     }
-    
-
     .socialmedia-container ul {
         width: 30%;
         font-family: 'Raleway', sans-serif;
@@ -785,7 +810,6 @@ input[type=submit] {
         border-top: 0;
         border-bottom: 0;
     }
-
     .fab-horizontal .socialmedia ul {
         text-align: left;
     }
@@ -826,7 +850,6 @@ input[type=submit] {
     .nav-bar {
         margin-top: 20px;
     }
-
     .subscribe-container p {
         width: 60%;
     }

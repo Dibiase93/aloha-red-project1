@@ -21,5 +21,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
     });
-
+    const cart = document.getElementById("cart-container")
+    const button = document.getElementById("add-button"),
+    count = 0;
+    button.onclick = (function(cart) {
+    count += 1;
+    cart.innerHTML = "cart-container" + count;
+});
 });
